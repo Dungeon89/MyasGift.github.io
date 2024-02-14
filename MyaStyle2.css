@@ -1,0 +1,92 @@
+﻿/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: plum;
+}
+
+/* Letter container styles */
+/*.letter-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+    */
+/* Button container styles */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Image styles */
+.bordered-image {
+    width: 250px;
+    height: 300px;
+    border: 5px solid darkolivegreen;
+    border-radius: 5px;
+}
+
+
+/* Confetti styles */
+.confetti {
+    width: 10px;
+    height: 5px;
+    background-color: darkolivegreen;
+    position: absolute;
+    border-radius: 50%;
+    animation: confetti-fall 2s linear;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+/* Table styles */
+table {
+    margin: auto;
+    border-collapse: unset;
+    border-spacing: 0;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+/* Button styles */
+button {
+    background-color: lightcoral;
+    font-family: playfair;
+    font-size: 20px;
+}
+
+/* Header styles */
+h2 {
+    color: lightcoral;
+    text-align: center;
+    font-size: 40px;
+    font-family: playfair;
+}
+
+h1 {
+    color: lightcoral;
+    text-align: center;
+    font-size: 60px;
+    font-family: playfair;
+}

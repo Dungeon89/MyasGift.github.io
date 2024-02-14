@@ -1,0 +1,39 @@
+﻿body
+{
+    background-color: plum;
+}
+
+h2
+{
+    color: lightcoral;
+    text-align: center;
+    font-size: 40px;
+    font-family:playfair;
+}
+
+table
+{
+    margin: auto;
+    border-collapse: unset;
+    border-spacing: 0;
+    width: 100%;
+}
+
+td
+{
+    text-align: center;
+}
+
+button {
+    background-color: lightcoral;
+    font-family: playfair;
+    font-size: 20px
+}
+
+
+
+/* Optional: Set a specific initial position for the button */
+#btnNo {
+    top: 100px;
+    left: 100px;
+}
