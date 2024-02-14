@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Mya's Gift</title>
+    <link rel="stylesheet" href="style_myaProject.css" />
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/KjXhws9/cat-Heart.png" />
+    <script>
+        //this function makes btnYes direct user to a new page
+        function loadPage2() {
+            window.location.href = "Mya_Projectpg2.html";
+        }
+
+        function whyClickNo() {
+            // Have a variable for the button
+            var button = document.getElementById("btnNo");
+
+            // Set the initial position off-screen
+            button.style.transition = "none"; // Disable transition temporarily
+            button.style.position = "absolute";
+            button.style.top = window.innerHeight / 2 - button.clientHeight / 2 + "px";
+            button.style.left = window.innerHeight / 2 - button.clientHeight / 2 + "px";
+
+            // Trigger a reflow to ensure the transition starts from the initial position
+            void button.offsetWidth;
+
+            // Enable transition and make the random spots for the button to go
+            button.style.transition = "top 1s ease-in-out, left 1s ease-in-out";
+            var randomTop = Math.floor(Math.random() * (window.innerHeight - button.clientHeight));
+            var randomLeft = Math.floor(Math.random() * (window.innerWidth - button.clientWidth));
+
+            // Set the new spot
+            button.style.top = randomTop + "px";
+            button.style.left = randomLeft + "px";
+        }
+
+    </script>
+</head>
+<body>
+
+    <h2>Do you <br /> REALLYYYYYY <br />love me??</h2>
+
+    <img style="width: 200px; height:150px; display: block; margin-left: auto; margin-right: auto;" src="love_letter.gif" alt="loveLetter" />
+    <br />
+    <br />
+
+    <table>
+        <tr>
+            <td>
+                <button type="button" id="btnYes" onclick="loadPage2()">YES!</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" id="btnNo" onclick="whyClickNo()">No....</button>
+            </td>
+        </tr>
+
+    </table>
+
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: plum;
+}
+
+.confetti {
+    width: 10px;
+    height: 5px;
+    background-color: darkolivegreen;
+    position: absolute;
+    border-radius: 50%;
+    animation: confetti-fall 2s linear;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+table {
+    margin: auto;
+    border-collapse: unset;
+    border-spacing: 0;
+    width: 100%;
+}
+
+td {
+    text-align: center;
+}
+
+button {
+    background-color: lightcoral;
+    font-family: playfair;
+    font-size: 20px
+}
+h2 {
+    color: lightcoral;
+    text-align: center;
+    font-size: 40px;
+    font-family: playfair;
+}
+
+h1 {
+    color: lightcoral;
+    text-align: center;
+    font-size: 60px;
+    font-family: playfair;
+}
+
+.bordered-image{
+    border: 5px solid darkolivegreen;
+    border-radius: 5px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Adjust as needed */
+    padding: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Optional: adds space between buttons */
+    margin-top: 20px; /* Adds some space above the buttons */
+}
+
+.letter-container {
+    width: 60%; /* Adjust width as needed */
+    max-width: 800px; /* Maximum width of the container */
+    text-align: center;
+    border: 1px solid darkolivegreen;
+    padding: 20px;
+    margin: 20px;
+}
