@@ -1,0 +1,107 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background-color:plum;
+}
+
+.bordered-image {
+    width: 250px;
+    height: 300px;
+    border: 5px solid darkolivegreen;
+    border-radius: 5px;
+}
+
+table{
+margin: auto;
+border-collapse: unset;
+border-spacing: 0;
+text-align: center;
+padding-top:10%;
+}
+
+td {
+text-align: center;
+}
+
+
+/* Confetti styles */
+.confetti {
+    width: 10px;
+    height: 5px;
+    background-color: darkolivegreen;
+    position: absolute;
+    border-radius: 50%;
+    animation: confetti-fall 2s linear;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+button {
+    background-color: lightcoral;
+    font-family: playfair;
+    font-size: 20px;
+}
+
+p {
+    font-family: playfair;
+}
+
+h1 {
+    font-family: playfair; 
+}
+
+h2 {
+    font-family: playfair;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This ensures vertical alignment is centered */
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the space between elements */
+}
+
+.image-left, .image-right {
+    flex: 1; /* Allows images to flex but you can set a fixed width if needed */
+    max-width: 250px; /* Limits the image width */
+}
+
+.text-section {
+    flex: 2; /* Gives the text section more space */
+    text-align: center;
+}
+
+.main-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-images img {
+    max-width: 250px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image-left, .image-right, .text-section {
+        max-width: 90%; /* Makes sure they don't stretch too wide on smaller screens */
+    }
+
+}
+
